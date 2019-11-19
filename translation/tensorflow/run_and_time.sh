@@ -10,9 +10,10 @@ TARGET_UNCASED_BLEU_SCORE=25
 
 set -e
 
-export COMPLIANCE_FILE="/tmp/transformer_compliance_${SEED}.log"
+export COMPLIANCE_FILE="/mnt/compliance/compliance_${SEED}.log"
 # path to the mlpef_compliance package in local directory,
 # if not set then default to the package name for installing from PyPI.
+export MLPERF_COMPLIANCE_PKG=/mnt/compliance
 export MLPERF_COMPLIANCE_PKG=${MLPERF_COMPLIANCE_PKG:-mlperf_compliance}
 
 # Install mlperf_compliance package.
