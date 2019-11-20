@@ -5,9 +5,9 @@ set -e
 SEED=$1
 QUALITY=$2
 
-cd /research/transformer
+#cd /research/transformer
 
-export PYTHONPATH=/research/transformer/transformer:${PYTHONPATH}
+export PYTHONPATH=/docker_home/training/translation/tensorflow/transformer:${PYTHONPATH}
 # Add compliance to PYTHONPATH
 # export PYTHONPATH=/mlperf/training/compliance:${PYTHONPATH}
 

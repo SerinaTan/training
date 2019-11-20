@@ -4,10 +4,12 @@ set -e
 
 SEED=$1
 
-cd /research/transformer
+TRANSFORMER=/docker_home/training/translation/tensorflow/transformer
+
+#cd $TRANSFORMER
 
 # TODO: Add SEED to process_data.py since this uses a random generator (future PR)
-export PYTHONPATH=/research/transformer/transformer:${PYTHONPATH}
+export PYTHONPATH=$TRANSFORMER:${PYTHONPATH}
 # Add compliance to PYTHONPATH
 # export PYTHONPATH=/mlperf/training/compliance:${PYTHONPATH}
 
