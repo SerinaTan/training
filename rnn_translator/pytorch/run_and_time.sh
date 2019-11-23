@@ -6,6 +6,9 @@
 
 set -e
 
+# set python path for mlperf compliance
+export PYTHONPATH=/docker_home/training/compliance
+
 # start timing
 start=$(date +%s)
 start_fmt=$(date +%Y-%m-%d\ %r)

@@ -2,7 +2,7 @@
 
 set -e
 
-DATASET_DIR='/data'
+DATASET_DIR='/docker_home/training/rnn_translator/dataset'
 
 SEED=${1:-"1"}
 TARGET=${2:-"24.00"}

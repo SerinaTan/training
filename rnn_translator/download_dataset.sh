@@ -19,7 +19,8 @@ set -e
 export LANG=C.UTF-8
 export LC_ALL=C.UTF-8
 
-OUTPUT_DIR=${1:-"data"}
+#OUTPUT_DIR=${1:-"data"}
+OUTPUT_DIR=/docker_home/training/rnn_translator/dataset
 echo "Writing to ${OUTPUT_DIR}. To change this, set the OUTPUT_DIR environment variable."
 
 OUTPUT_DIR_DATA="${OUTPUT_DIR}/data"

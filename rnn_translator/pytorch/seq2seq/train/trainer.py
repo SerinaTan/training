@@ -7,7 +7,6 @@ import numpy as np
 import torch
 import torch.optim
 import torch.utils.data
-from apex.parallel import DistributedDataParallel as DDP
 from mlperf_compliance import mlperf_log
 
 from seq2seq.train.fp_optimizers import Fp16Optimizer
@@ -99,6 +98,7 @@ class Seq2SeqTrainer:
             self.model = self.model.half()
 
         if distributed:
+            from apex.parallel import DistributedDataParallel as DDP
             self.model = DDP(self.model)
 
         if math == 'fp16':
