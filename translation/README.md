@@ -1,3 +1,11 @@
+# Serina's notes
+
+To reproduce AMD's results, you only need to run `run_and_time.py 1` which will automatically download all the datasets
+and kick off the training process.
+
+The shell scripts in this branch should work if you mount the root "training" folder onto /docker_home/training 
+inside your docker container. Otherwise, you may need to modify the shell scripts accordingly.   
+
 
 # 1. Problem 
 
